@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <BorderPane prefHeight="309.0" prefWidth="461.0">
+         <left>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="55.0" layoutY="65.0" text="Usuario" />
+                  <Label layoutX="55.0" layoutY="94.0" prefHeight="18.0" prefWidth="64.0" text="Contraseña" />
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="14.0" layoutY="186.0" mnemonicParsing="false" onAction="#btnLogin" text="Iniciar Sesion" />
+                  <Button layoutX="143.0" layoutY="186.0" mnemonicParsing="false" text="Salir" />
+                  <PasswordField fx:id="password" layoutX="14.0" layoutY="97.0" />
+                  <TextField fx:id="user" layoutX="14.0" layoutY="61.0" />
+                  <Label fx:id="lblError" layoutX="20.0" layoutY="146.0" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</GridPane>
